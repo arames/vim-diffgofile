@@ -1,3 +1,11 @@
+This is a fork of https://github.com/vim-scripts/DiffGoFile, itself a mirror of
+the vim script 1888. This repo contains fixes and changes to suit my needs.
+Changes include:
+- Add the g:diffgofile_goto_existing_buffer option to allow opening diff
+  locations in existing buffers.
+
+________________________________________________________________________________
+
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=1888
 
 Description:
