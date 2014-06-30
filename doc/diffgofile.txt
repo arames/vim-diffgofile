@@ -119,6 +119,15 @@ PREVENTING LOADING					   *g:loaded_diffgofile*
 
 	let g:loaded_diffgofile = 1
 
+REUSE OPEN BUFFERS 			     *g:diffgofile_goto_existing_buffer*
+
+	By default, when opening a diff location in a split, the plugin will
+	open a new split. If the option g:diffgofile_goto_existing_buffer
+	is set, the plugin will instead try to reuse an open buffer for the
+	target file.
+
+	let g:diffgofile_goto_existing_buffer = 1
+
 
 ==============================================================================
 5. Mapping DiffGoFile Keys 				       *diffgofile-keys*

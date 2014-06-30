@@ -54,6 +54,10 @@ if ! exists("g:diffgofile_directories_up")
         let g:diffgofile_directories_up = 7
 endif
 
+if ! exists("g:diffgofile_goto_existing_buffer ")
+        let g:diffgofile_goto_existing_buffer = 0
+endif
+
 
 " Function : DiffGoFile
 " Purpose  : Find spot in file which corresponds to cursor in unified diff
@@ -92,7 +96,7 @@ function DiffGoFile(doSplit)
 
 	" restore position in diff window
 	call <SID>RestoreCursorPosition (l:pos)
-	call <SID>FindOrCreateBuffer(l:file, a:doSplit, 0)
+	call <SID>FindOrCreateBuffer(l:file, a:doSplit, g:diffgofile_goto_existing_buffer)
 	call <SID>RestoreCursorPosition (l:result[1:])
 endfunction
 endif
