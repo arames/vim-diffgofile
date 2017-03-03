@@ -4,6 +4,15 @@ Changes include:
 - Add the g:diffgofile_goto_existing_buffer option to allow opening diff
   locations in existing buffers.
 
+With vim-plug, use
+
+    Plug 'arames/vim-diffgofile', {
+      \ 'do': 'ln -s cd ftplugin && diff_gofile.vim git_diffgofile.vim'
+      \ }
+
+to install the plugin and automatically create a symlink to enable the features
+for git diffs. You can also create the symlink manually.
+
 ________________________________________________________________________________
 
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=1888
