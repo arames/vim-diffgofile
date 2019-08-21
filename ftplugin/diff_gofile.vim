@@ -215,7 +215,7 @@ function <SID>ParseUnified (pos)
 	let l:set_line=l:from_line+l:current_line-l:at_line-g:cnt-1
 	let l:set_top_line=l:set_line-l:current_line+l:current_top_line
 
-	return [ l:filename, l:set_top_line, l:set_line, l:current_column ]
+	return [ l:filename, l:set_top_line, l:set_line, l:current_column - 1 ]
 endfunction
 
 
