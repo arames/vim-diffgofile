@@ -31,5 +31,4 @@ Where X is one of: n - open in New window
 Configuration:
 You may wish to setup a hotkey, I'm using CTRL-] (:tag) for example
 
-autocmd FileType diff nnoremap <buffer> <C-]> :call DiffGoFile('n')<CR>
-
+autocmd FileType diff,git nnoremap <buffer> <C-]> :call DiffGoFile('n')<CR>
